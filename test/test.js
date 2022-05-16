@@ -17,6 +17,8 @@ describe("pascal2snake", () => {
   });
 });
 
+
+
 describe("pascalToSnake", function () {
   it("should return test_controller", function () {
     assert.equal(pascal2snake("TestController"), "test_controller");
