@@ -1,6 +1,7 @@
 import assert from "assert";
-import { pascaltosnake } from "../js/app.js"
-
+import { pascaltosnake } from "../js/app.js";
+import pascal2snake from "../../pascaltosnake/test/test.js";
+import { pascal2snake } from "process";
 
 // describe('Array', function () {
 //   describe('#indexOf()', function () {
@@ -10,22 +11,26 @@ import { pascaltosnake } from "../js/app.js"
 //   });
 // });
 
-
-
-describe('pascalToSnake', function () {
-  it('should return test_controller', function () {
-    assert.equal(pascaltosnake("TestController"), "test_controller");
+describe("pascal2snake", () => {
+  it("blabla", () => {
+    pascal2snake(pascal2snake("test")).toEqual("test");
   });
-  it('should return movie_and_book', function () {
+});
+
+describe("pascalToSnake", function () {
+  it("should return test_controller", function () {
+    assert.equal(pascal2snake("TestController"), "test_controller");
+  });
+  it("should return movie_and_book", function () {
     assert.equal(pascaltosnake("MovieAndBook"), "movie_and_book");
   });
-  it('should return app7_test', function () {
+  it("should return app7_test", function () {
     assert.equal(pascaltosnake("App7Test"), "app7_test");
   });
-  it('should return home', function () {
+  it("should return home", function () {
     assert.equal(pascaltosnake("Home"), "home");
   });
-  it('should return play-movie', function () {
+  it("should return play-movie", function () {
     assert.equal(pascaltosnake("play-movie"), "play-movie");
   });
   it('should return "1"', function () {
