@@ -5,4 +5,5 @@
     }
     
 //}
-console.log(PascalToSnake("Test Pascal To SNAKE"))
+console.log(PascalToSnake("Test Pascal To SNAKE"));
+
